@@ -155,7 +155,7 @@ h1 {
                   {% for filme in lista_filmes_emalta %}
                     {% if forloop.counter < 5 %}
                   <div class="item h-64 w-1/4 m-4">
-                      <a href="#">
+                      <a href="{% url 'filme:detalhesfilmes' filme.pk %}">
                         <img src="{{ filme.thumb.url}}" class="rounded-md w-full h-full object-cover">
                       </a>
                   </div>
@@ -169,7 +169,7 @@ h1 {
                       {% for filme in lista_filmes_emalta %}
                         {% if forloop.counter > 4 %}
                             <div class="item h-64 w-1/4 m-4">
-                                <a href="#">
+                                <a href="{% url 'filme:detalhesfilmes' filme.pk %}">
                                 <img src="{{ filme.thumb.url}}" class="rounded-md w-full h-full object-cover">
                                 </a>
                             </div>
@@ -195,7 +195,7 @@ h1 {
                   {% for filme in request.user.filmes_vistos.all %}
                     {% if forloop.counter < 5 %}
                   <div class="item h-64 w-1/4 m-4">
-                      <a href="#">
+                      <a href="{% url 'filme:detalhesfilmes' filme.pk %}">
                         <img src="{{ filme.thumb.url}}" class="rounded-md w-full h-full object-cover">
                       </a>
                   </div>
@@ -209,7 +209,7 @@ h1 {
                       {% for filme in request.user.filmes_vistos.all %}
                         {% if forloop.counter > 4 %}
                             <div class="item h-64 w-1/4 m-4">
-                                <a href="#">
+                                <a href="{% url 'filme:detalhesfilmes' filme.pk %}">
                                 <img src="{{ filme.thumb.url}}" class="rounded-md w-full h-full object-cover">
                                 </a>
                             </div>
