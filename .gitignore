@@ -1,6 +1,6 @@
 # Arquivos DLL compilados / otimizados /
 __pycache__/
-*.py[bacalhau]]
+
 *$py.class
 
 # Extensões C
