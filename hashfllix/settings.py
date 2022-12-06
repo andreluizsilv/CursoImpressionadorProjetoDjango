@@ -87,7 +87,7 @@ DATABASES = {
 }
 import dj_database_url
 
-DATABASES['default'] = dj_database_url.parse('postgres://...', conn_max_age=600)
+DATABASES['default'] = dj_database_url.parse('postgres://novltmptrsgtaa:4a8d3cda8c098f49a09087e15d6329e316761fb379c3c178e808b3b9d855a346@ec2-3-220-207-90.compute-1.amazonaws.com:5432/d69bl1on5ebqlb', conn_max_age=600)
 
 
 # Password validation
