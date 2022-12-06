@@ -1,1 +1,1 @@
-web: gunicorn hashflix.wsgi --log-file -
+web: gunicorn hashfllix.wsgi --log-file -
